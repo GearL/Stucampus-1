@@ -13,7 +13,7 @@ from stucampus.account.permission import check_perms
 from django.db.models import Q
 import datetime
 def signup_mobile(request):
-     return render(request, 'dreamer/apply_mobile.html', {'form': Register_Form()})
+    return render(request, 'dreamer/apply_mobile.html', {'form': Register_Form()})
 
 class SignUp(View):
     def get(self, request):
