@@ -151,5 +151,5 @@ def search(request):
 @check_perms('dreamer.manager')
 def detail(request):
     apply_id = request.GET.get('id')
-    app = Register.objects.get(id=apply_id)
+    app = get_object_or_404(Register,id=apply_id)
     return render(request,'dreamer/detail.html',{'app':app})
