@@ -26,6 +26,7 @@ window.onload = function(){
         eval("theOldFun="+window.onresize.toString()); 
         window.onresize=function(){
             theOldFun();
+            bannerwidth = parseInt($(".b-container a").css("width"))/fontsize;
             bannerselect(now);
         }; 
     }
@@ -149,7 +150,7 @@ function hiddenthings(){
         $(".fixed-logo").css("transform","scale(4)");
         $(".fixed-logo").css("opacity","0");
         setTimeout(function(){
-            window.location.href = "http://stu.szu.edu.cn/manage/index";
+            window.location.href = "/manage/index";
         },500);
     }
 };
