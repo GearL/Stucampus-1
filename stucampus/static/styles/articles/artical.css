@@ -194,6 +194,7 @@ body{
 }
 .artical-text img{
     max-width: 90%;
+    height: auto !important;
 }
 .artical-foot{
     margin-top: 1.5rem;
